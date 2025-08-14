@@ -42,7 +42,7 @@ else
 fi
 
 # echo "whisper $mp3file $opt"
-./whisper.cpp/build/bin/whisper-cli -m ./models/ggml-large-v3-turbo-q8_0.bin -f "$mp3file" --split-on-word $opt --print-progress -l "$lang"
+./whisper.cpp/build/bin/whisper-cli -m ./whisper.cpp/models/ggml-large-v3-turbo-q8_0.bin -f "$mp3file" --split-on-word $opt --print-progress -l "$lang"
 
 # Define output filenames
 whisper_output_file="$mp3file.$fmt"
